@@ -1,0 +1,9 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小丑牌：星塵牌局</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><div><h1>🃏 小丑牌：星塵牌局</h1><p>撲克牌 × Roguelike × 小丑效果</p></div><button id="restart">重新開始</button></header>
+<section class="stats"><div>第 <b id="round">1</b> 回合</div><div>目標 <b id="target">300</b></div><div>籌碼 <b id="chips">0</b></div><div>倍率 <b id="mult">0</b>x</div><div>金幣 <b id="money">4</b> 🪙</div></section>
+<section class="table"><div class="message" id="message">選最多 5 張牌，然後出牌！</div><div class="cards" id="hand"></div><div class="actions"><button id="play">出牌</button><button id="discard">棄牌（剩 <span id="discards">3</span>）</button></div></section>
+<section><h2>🎭 你的牌組</h2><div class="jokers" id="jokers"></div></section>
+<section class="shop hidden" id="shop"><h2>🛒 商店</h2><p>花費 3 金幣購買小丑牌，或直接開始下一回合。</p><div id="shopCards"></div><button id="next">下一回合</button></section>
+</main><script src="game.js"></script></body></html>
